@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+#header {
+  background-color: #FF6600;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+#header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 75px;
+}
+
+#header ul.nav-right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: inline-end;
+  margin-left: 800px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#header li.active a {
+  border-bottom: 4px solid white;
+}
+
+#header img {
+  width: 125px;
+  height: 50px;
+}
+
+/* Banner */
+#banner {
+  margin-top: 70px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  transform-style: preserve-3d;
+}
+
+.banner-text h1 {
+  transform: skewY(5deg);
+  font-size: 50px;
+  margin-bottom: 0; 
+}
+
+.banner-text p {
+  transform: skewY(5deg); 
+  margin-top: 0;
+}
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: 0 100%;
+  transform: skewY(-5deg);
+}
+
+.parallax img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parallax:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0.8), transparent);
+}
+
+/* List Post */
+#list-post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 75px;
+  margin-top: 10px;
+}
+
+.post-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.post-card {
+  width: 23%;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.post-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 21px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.post-time {
+  margin: 0;
+  color: #a8a8a8;
+  font-weight: bold;
+}
+
+.text-container {
+  padding: 25px;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+}
+
+.page-options {
+  display: flex;
+  align-items: center;
+  margin-left: 1160px;
+}
+
+.page-size,
+.sort-buttons {
+  margin-right: 20px;
+}
+
+.page-options label {
+  margin-right: 8px;
+}
+
+.page-options select {
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #FF6600;
+  color: #fff;
+  border: 1px solid #FF6600;
+}
+
+

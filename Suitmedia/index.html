@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Halaman List</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <nav>
+        <div class="header-content">
+          <img src="assets/img/suitmedia.png" alt="Logo Suitmedia" />
+          <ul class="nav-right">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li class="active"><a href="#ideas">Ideas</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="parallax" id="banner-image-container">
+        <div class="banner-text">
+          <h1>Ideas</h1>
+          <p>Where all our great things begin</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- List Post -->
+    <div class="page-options">
+      <div class="page-size">
+        <label for="itemsPerPage">Items per page:</label>
+        <select id="itemsPerPage" onchange="updatePageSize()">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+
+      <div class="sort-buttons">
+        <label for="sortOptions">Sort by:</label>
+        <select id="sortOptions" onchange="sortPosts()">
+          <option value="latest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </div>
+    </div>
+
+    <section id="list-post">
+      <div class="post-row">
+        <div class="post-card">
+          <img src="assets/img/thumb1.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">20-11-2023</p>
+            <h2 class="post-title">
+              Kenali Tingkatan Influencers Berdasarkan Jumlah Followers
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb2.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">19-11-2023</p>
+            <h2 class="post-title">
+              Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+              Influencer Marketing yang Tepat
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb1.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">11-10-2023</p>
+            <h2 class="post-title">
+              Kenali Tingkatan Influencers Berdasarkan Jumlah Followers
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb2.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">14-03-2023</p>
+            <h2 class="post-title">
+              Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+              Influencer Marketing yang Tepat
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-row">
+        <div class="post-card">
+          <img src="assets/img/thumb1.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">13 JULI 2023</p>
+            <h2 class="post-title">
+              Kenali Tingkatan Influencers Berdasarkan Jumlah Followers
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb2.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">13 JULI 2023</p>
+            <h2 class="post-title">
+              Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+              Influencer Marketing yang Tepat
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb1.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">17 NOVEMBER 2023</p>
+            <h2 class="post-title">
+              Kenali Tingkatan Influencers Berdasarkan Jumlah Followers
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb2.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">18 NOVEMBER 2023</p>
+            <h2 class="post-title">
+              Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+              Influencer Marketing yang Tepat
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-row">
+        <div class="post-card">
+          <img src="assets/img/thumb1.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">4 JANUARI 2023</p>
+            <h2 class="post-title">
+              Kenali Tingkatan Influencers Berdasarkan Jumlah Followers
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb2.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">14 MEI 2023</p>
+            <h2 class="post-title">
+              Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+              Influencer Marketing yang Tepat
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb1.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">14 MARET 2023</p>
+            <h2 class="post-title">
+              Kenali Tingkatan Influencers Berdasarkan Jumlah Followers
+            </h2>
+          </div>
+        </div>
+        <div class="post-card">
+          <img src="assets/img/thumb2.jpg" loading="lazy" />
+          <div class="text-container">
+            <p class="post-time">28 APRIL 2023</p>
+            <h2 class="post-title">
+              Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+              Influencer Marketing yang Tepat
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="pagination" class="pagination"></div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
